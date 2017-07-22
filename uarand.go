@@ -36,6 +36,7 @@ func GetRandom() string {
 	return Default.GetRandom()
 }
 
+// New returns UARAnd initialized with the provided randomizer
 func New(r Randomizer) *UARand {
 	return &UARand{r}
 }
